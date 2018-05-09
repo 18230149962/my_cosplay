@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+pyse/__init__.py
+pyse/pyse.py
+pyse.egg-info/PKG-INFO
+pyse.egg-info/SOURCES.txt
+pyse.egg-info/dependency_links.txt
+pyse.egg-info/entry_points.txt
+pyse.egg-info/not-zip-safe
+pyse.egg-info/requires.txt
+pyse.egg-info/top_level.txt
+pyse/running/HTMLTestRunner.py
+pyse/running/TestRunner.py
+pyse/running/__init__.py
