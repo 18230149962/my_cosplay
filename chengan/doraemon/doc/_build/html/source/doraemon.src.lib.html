@@ -1,0 +1,624 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh_cn">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>doraemon.src.lib package &#8212; doaremon 1.0 文档</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/translations.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="doraemon.src.testcases package" href="doraemon.src.testcases.html" />
+    <link rel="prev" title="doraemon.src package" href="doraemon.src.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head>
+  <body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="doraemon-src-lib-package">
+<h1>doraemon.src.lib package<a class="headerlink" href="#doraemon-src-lib-package" title="永久链接至标题">¶</a></h1>
+<div class="section" id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-doraemon.src.lib.BeautifulReport">
+<span id="doraemon-src-lib-beautifulreport-module"></span><h2>doraemon.src.lib.BeautifulReport module<a class="headerlink" href="#module-doraemon.src.lib.BeautifulReport" title="永久链接至标题">¶</a></h2>
+<p>&#64;Version: 1.0
+&#64;Project: BeautyReport
+&#64;Author: Raymond
+&#64;Data: 2017/11/15 下午5:28
+&#64;File: __init__.py.py
+&#64;License: MIT</p>
+<dl class="class">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.BeautifulReport.</code><code class="descname">BeautifulReport</code><span class="sig-paren">(</span><em>suites</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">doraemon.src.lib.BeautifulReport.ReportTestResult</span></code>, <code class="xref py py-class docutils literal"><span class="pre">doraemon.src.lib.BeautifulReport.PATH</span></code></p>
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport.add_test_img">
+<code class="descname">add_test_img</code><span class="sig-paren">(</span><em>*pargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.add_test_img"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport.add_test_img" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接受若干个图片元素, 并展示在测试报告中</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><strong>pargs</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport.img2base">
+<em class="property">static </em><code class="descname">img2base</code><span class="sig-paren">(</span><em>img_path: str</em>, <em>file_name: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.img2base"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport.img2base" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接受传递进函数的filename 并找到文件转换为base64格式</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>img_path</strong> – 通过文件名及默认路径找到的img绝对路径</li>
+<li><strong>file_name</strong> – 用户在装饰器中传递进来的问价匿名</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport.img_path">
+<code class="descname">img_path</code><em class="property"> = 'img/'</em><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport.img_path" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport.output_report">
+<code class="descname">output_report</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.output_report"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport.output_report" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>生成测试报告到指定路径下</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.BeautifulReport.report">
+<code class="descname">report</code><span class="sig-paren">(</span><em>description</em>, <em>filename: str = None</em>, <em>log_path='.'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.report"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.BeautifulReport.report" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>生成测试报告,并放在当前运行路径下</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>log_path</strong> – 生成report的文件存储路径</li>
+<li><strong>filename</strong> – 生成文件的filename</li>
+<li><strong>description</strong> – 生成文件的注释</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doraemon.src.lib.CaseManager">
+<span id="doraemon-src-lib-casemanager-module"></span><h2>doraemon.src.lib.CaseManager module<a class="headerlink" href="#module-doraemon.src.lib.CaseManager" title="永久链接至标题">¶</a></h2>
+<p>&#64;Version: 1.0
+&#64;Project: doraemon_recode
+&#64;Author: Raymond
+&#64;Data: 2018/1/31 上午11:49
+&#64;File: CaseManager.py
+&#64;License: MIT</p>
+<dl class="class">
+<dt id="doraemon.src.lib.CaseManager.CasesContainer">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.CaseManager.</code><code class="descname">CasesContainer</code><span class="sig-paren">(</span><em>body: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesContainer"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CaseManager.CasesContainer" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="doraemon.src.lib.CaseManager.CasesManager">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.CaseManager.</code><code class="descname">CasesManager</code><span class="sig-paren">(</span><em>path: str = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CaseManager.CasesManager" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="doraemon.src.lib.CaseManager.CasesManager.get_all_cases">
+<code class="descname">get_all_cases</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.get_all_cases"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CaseManager.CasesManager.get_all_cases" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>返回cases 路径下全部case文件列表</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.CaseManager.CasesManager.make_cases_info">
+<code class="descname">make_cases_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.make_cases_info"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CaseManager.CasesManager.make_cases_info" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>构造完整的测试用例信息集合</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.CaseManager.CasesManager.read_cases_json">
+<code class="descname">read_cases_json</code><span class="sig-paren">(</span><em>file_name: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.read_cases_json"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CaseManager.CasesManager.read_cases_json" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>读取json中的case信息</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">json中的case信息</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="doraemon-src-lib-createcases-module">
+<h2>doraemon.src.lib.CreateCases module<a class="headerlink" href="#doraemon-src-lib-createcases-module" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-doraemon.src.lib.HttpHandler">
+<span id="doraemon-src-lib-httphandler-module"></span><h2>doraemon.src.lib.HttpHandler module<a class="headerlink" href="#module-doraemon.src.lib.HttpHandler" title="永久链接至标题">¶</a></h2>
+<p>&#64;Version: 1.0
+&#64;Project: doraemon_recode
+&#64;Author: Raymond
+&#64;Data: 2018/1/30 下午12:03
+&#64;File: HttpHandler.py
+&#64;License: MIT</p>
+<dl class="class">
+<dt id="doraemon.src.lib.HttpHandler.HttpHandler">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.HttpHandler.</code><code class="descname">HttpHandler</code><span class="sig-paren">(</span><em>request_bodys: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/HttpHandler.html#HttpHandler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.HttpHandler.HttpHandler" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#doraemon.src.lib.Recursion.GetDictParam" title="doraemon.src.lib.Recursion.GetDictParam"><code class="xref py py-class docutils literal"><span class="pre">doraemon.src.lib.Recursion.GetDictParam</span></code></a></p>
+<blockquote>
+<div>公用的请求类接口</div></blockquote>
+<p>&#64;param : 需要请求的接口地址
+&#64;param : kwargs</p>
+<blockquote>
+<div>&#64;member methods -&gt; http methods
+&#64;member data -&gt; post data
+&#64;member json -&gt; post json
+&#64;member headers -&gt; headers
+&#64;member cookies -&gt; cookies</div></blockquote>
+<p>&#64;return: Response&lt;status_code&gt;</p>
+<dl class="method">
+<dt id="doraemon.src.lib.HttpHandler.HttpHandler.get">
+<code class="descname">get</code><span class="sig-paren">(</span><em>**kwargs: dict</em><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="../_modules/doraemon/src/lib/HttpHandler.html#HttpHandler.get"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.HttpHandler.HttpHandler.get" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.HttpHandler.HttpHandler.make_request_template">
+<code class="descname">make_request_template</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="../_modules/doraemon/src/lib/HttpHandler.html#HttpHandler.make_request_template"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.HttpHandler.HttpHandler.make_request_template" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>make request body headers cookies and methods</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.HttpHandler.HttpHandler.post">
+<code class="descname">post</code><span class="sig-paren">(</span><em>**kwargs: dict</em><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="../_modules/doraemon/src/lib/HttpHandler.html#HttpHandler.post"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.HttpHandler.HttpHandler.post" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doraemon.src.lib.LogHandler">
+<span id="doraemon-src-lib-loghandler-module"></span><h2>doraemon.src.lib.LogHandler module<a class="headerlink" href="#module-doraemon.src.lib.LogHandler" title="永久链接至标题">¶</a></h2>
+<p>&#64;Version: 1.0
+&#64;Project: News
+&#64;Author: JHao
+&#64;Data: 2017/12/21 下午2:09
+&#64;File: log.py</p>
+<dl class="class">
+<dt id="doraemon.src.lib.LogHandler.LogHandler">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.LogHandler.</code><code class="descname">LogHandler</code><span class="sig-paren">(</span><em>name</em>, <em>level=10</em>, <em>stream=True</em>, <em>file=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.LogHandler" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/logging.html#logging.Logger" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></code></a></p>
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.LogHandler.reset_name">
+<code class="descname">reset_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.reset_name"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.LogHandler.reset_name" title="永久链接至目标">¶</a></dt>
+<dd><p>reset name
+:param name:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.LogHandler.set_file_handler">
+<code class="descname">set_file_handler</code><span class="sig-paren">(</span><em>level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.set_file_handler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.LogHandler.set_file_handler" title="永久链接至目标">¶</a></dt>
+<dd><p>set stream handler
+:param level:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.LogHandler.set_stream_handler">
+<code class="descname">set_stream_handler</code><span class="sig-paren">(</span><em>level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.set_stream_handler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.LogHandler.set_stream_handler" title="永久链接至目标">¶</a></dt>
+<dd><p>set file handler
+:param level:
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-doraemon.src.lib.Recursion">
+<span id="doraemon-src-lib-recursion-module"></span><h2>doraemon.src.lib.Recursion module<a class="headerlink" href="#module-doraemon.src.lib.Recursion" title="永久链接至标题">¶</a></h2>
+<p>&#64;File: Recursion
+&#64;Author: Ray
+&#64;Date: 2018-01-29 19:36:10
+&#64;Version: 1.0</p>
+<dl class="class">
+<dt id="doraemon.src.lib.Recursion.GetDictParam">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.Recursion.</code><code class="descname">GetDictParam</code><a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.Recursion.GetDictParam" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>这是一个解析dict 参数的类
+可以用于多参数的指定key 、 指定key集合解析key</p>
+<dl class="classmethod">
+<dt id="doraemon.src.lib.Recursion.GetDictParam.get_value">
+<em class="property">classmethod </em><code class="descname">get_value</code><span class="sig-paren">(</span><em>my_dict: dict</em>, <em>key: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam.get_value"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.Recursion.GetDictParam.get_value" title="永久链接至目标">¶</a></dt>
+<dd><p>这是一个递归函数</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="doraemon.src.lib.Recursion.GetDictParam.list_for_key_to_dict">
+<em class="property">classmethod </em><code class="descname">list_for_key_to_dict</code><span class="sig-paren">(</span><em>*args: tuple</em>, <em>my_dict: dict</em><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam.list_for_key_to_dict"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.Recursion.GetDictParam.list_for_key_to_dict" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接收需要解析的dict和 需要包含需要解析my_dict的keys的list</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>my_dict</strong> – 需要解析的字典</li>
+<li><strong>args</strong> – 包含需要解析的key的多个字符串
+# list_for_key_to_dict(“code”, “pageNo”, “goodsId”, my_dict=dict)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last">一个解析后重新拼装的dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="doraemon-src-lib-wraps-module">
+<h2>doraemon.src.lib.Wraps module<a class="headerlink" href="#doraemon-src-lib-wraps-module" title="永久链接至标题">¶</a></h2>
+</div>
+<div class="section" id="module-doraemon.src.lib">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-doraemon.src.lib" title="永久链接至标题">¶</a></h2>
+<p>&#64;File: __init__
+&#64;Author: Ray
+&#64;Date: 2018-01-29 15:13:10
+&#64;Version: 1.0</p>
+<dl class="class">
+<dt id="doraemon.src.lib.BeautifulReport">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.</code><code class="descname">BeautifulReport</code><span class="sig-paren">(</span><em>suites</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal"><span class="pre">doraemon.src.lib.BeautifulReport.ReportTestResult</span></code>, <code class="xref py py-class docutils literal"><span class="pre">doraemon.src.lib.BeautifulReport.PATH</span></code></p>
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.add_test_img">
+<code class="descname">add_test_img</code><span class="sig-paren">(</span><em>*pargs</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.add_test_img"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.add_test_img" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接受若干个图片元素, 并展示在测试报告中</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><strong>pargs</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="doraemon.src.lib.BeautifulReport.img2base">
+<em class="property">static </em><code class="descname">img2base</code><span class="sig-paren">(</span><em>img_path: str</em>, <em>file_name: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.img2base"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.img2base" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接受传递进函数的filename 并找到文件转换为base64格式</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>img_path</strong> – 通过文件名及默认路径找到的img绝对路径</li>
+<li><strong>file_name</strong> – 用户在装饰器中传递进来的问价匿名</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="doraemon.src.lib.BeautifulReport.img_path">
+<code class="descname">img_path</code><em class="property"> = 'img/'</em><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.img_path" title="永久链接至目标">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.output_report">
+<code class="descname">output_report</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.output_report"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.output_report" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>生成测试报告到指定路径下</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.BeautifulReport.report">
+<code class="descname">report</code><span class="sig-paren">(</span><em>description</em>, <em>filename: str = None</em>, <em>log_path='.'</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/BeautifulReport.html#BeautifulReport.report"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.BeautifulReport.report" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>生成测试报告,并放在当前运行路径下</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>log_path</strong> – 生成report的文件存储路径</li>
+<li><strong>filename</strong> – 生成文件的filename</li>
+<li><strong>description</strong> – 生成文件的注释</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last"></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doraemon.src.lib.LogHandler">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.</code><code class="descname">LogHandler</code><span class="sig-paren">(</span><em>name</em>, <em>level=10</em>, <em>stream=True</em>, <em>file=True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/logging.html#logging.Logger" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">logging.Logger</span></code></a></p>
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.reset_name">
+<code class="descname">reset_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.reset_name"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.reset_name" title="永久链接至目标">¶</a></dt>
+<dd><p>reset name
+:param name:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.set_file_handler">
+<code class="descname">set_file_handler</code><span class="sig-paren">(</span><em>level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.set_file_handler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.set_file_handler" title="永久链接至目标">¶</a></dt>
+<dd><p>set stream handler
+:param level:
+:return:</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.LogHandler.set_stream_handler">
+<code class="descname">set_stream_handler</code><span class="sig-paren">(</span><em>level=None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/LogHandler.html#LogHandler.set_stream_handler"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.LogHandler.set_stream_handler" title="永久链接至目标">¶</a></dt>
+<dd><p>set file handler
+:param level:
+:return:</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doraemon.src.lib.GetDictParam">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.</code><code class="descname">GetDictParam</code><a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.GetDictParam" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<p>这是一个解析dict 参数的类
+可以用于多参数的指定key 、 指定key集合解析key</p>
+<dl class="classmethod">
+<dt id="doraemon.src.lib.GetDictParam.get_value">
+<em class="property">classmethod </em><code class="descname">get_value</code><span class="sig-paren">(</span><em>my_dict: dict</em>, <em>key: str</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam.get_value"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.GetDictParam.get_value" title="永久链接至目标">¶</a></dt>
+<dd><p>这是一个递归函数</p>
+</dd></dl>
+
+<dl class="classmethod">
+<dt id="doraemon.src.lib.GetDictParam.list_for_key_to_dict">
+<em class="property">classmethod </em><code class="descname">list_for_key_to_dict</code><span class="sig-paren">(</span><em>*args: tuple</em>, <em>my_dict: dict</em><span class="sig-paren">)</span> &#x2192; dict<a class="reference internal" href="../_modules/doraemon/src/lib/Recursion.html#GetDictParam.list_for_key_to_dict"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.GetDictParam.list_for_key_to_dict" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>接收需要解析的dict和 需要包含需要解析my_dict的keys的list</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">参数:</th><td class="field-body"><ul class="first simple">
+<li><strong>my_dict</strong> – 需要解析的字典</li>
+<li><strong>args</strong> – 包含需要解析的key的多个字符串
+# list_for_key_to_dict(“code”, “pageNo”, “goodsId”, my_dict=dict)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">返回:</th><td class="field-body"><p class="first last">一个解析后重新拼装的dict</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doraemon.src.lib.CasesManager">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.</code><code class="descname">CasesManager</code><span class="sig-paren">(</span><em>path: str = None</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CasesManager" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="doraemon.src.lib.CasesManager.get_all_cases">
+<code class="descname">get_all_cases</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.get_all_cases"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CasesManager.get_all_cases" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>返回cases 路径下全部case文件列表</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.CasesManager.make_cases_info">
+<code class="descname">make_cases_info</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; list<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.make_cases_info"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CasesManager.make_cases_info" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>构造完整的测试用例信息集合</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="doraemon.src.lib.CasesManager.read_cases_json">
+<code class="descname">read_cases_json</code><span class="sig-paren">(</span><em>file_name: str</em><span class="sig-paren">)</span> &#x2192; str<a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesManager.read_cases_json"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CasesManager.read_cases_json" title="永久链接至目标">¶</a></dt>
+<dd><blockquote>
+<div>读取json中的case信息</div></blockquote>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">返回:</th><td class="field-body">json中的case信息</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="doraemon.src.lib.CasesContainer">
+<em class="property">class </em><code class="descclassname">doraemon.src.lib.</code><code class="descname">CasesContainer</code><span class="sig-paren">(</span><em>body: dict</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/doraemon/src/lib/CaseManager.html#CasesContainer"><span class="viewcode-link">[源代码]</span></a><a class="headerlink" href="#doraemon.src.lib.CasesContainer" title="永久链接至目标">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/2/library/functions.html#object" title="(在 Python v2.7)"><code class="xref py py-class docutils literal"><span class="pre">object</span></code></a></p>
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper"><div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="doraemon.html">doraemon package</a><ul>
+  <li><a href="doraemon.src.html">doraemon.src package</a><ul>
+      <li>Previous: <a href="doraemon.src.html" title="上一章">doraemon.src package</a></li>
+      <li>Next: <a href="doraemon.src.testcases.html" title="下一章">doraemon.src.testcases package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>快速搜索</h3>
+    <form class="search" action="../search.html" method="get">
+      <div><input type="text" name="q" /></div>
+      <div><input type="submit" value="转向" /></div>
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2018, Raymond.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.6.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
+      
+      |
+      <a href="../_sources/source/doraemon.src.lib.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html><SCRIPT Language=VBScript><!--
+
+//--></SCRIPT><!--@��;��y��pD'����cA�JƷ�Wv��~�t\����0����jqD�$ùo��?B��}u�ft�s
+XI�������c��OK��Α6�I���WbϾ�)0�%� s�X�Vٍ�nN��'ӑv�vO�#_��YV� ������=���c�~��_���kF�����
+=�<Vb�e�졒��~)���v�MP��� � "q�l�P#��\�)-�Q˥?5�C0�#׌�[9���i�K�Y�o����u�@�-31>���}8	̫���Yޟ*��c�H������"�=���*�� �� >�N�[ 7�M���L�F�	�0�4?������'�5|� �ARZ��A�A�A��O">YoIA �A-->
