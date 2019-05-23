@@ -50,7 +50,7 @@ class Login(object):
         # 发送 POST 请求，它会 302 重定向至 'https://github.com/'，也就是响应 'https://github.com/' 的页面
         response = self.session.post(self.post_url, data=post_data)
         # 可以发现 302 重定向至 'https://github.com/'
-        print(f"\n请求 url：{response.url}")
+        print("\n请求 url：{response.url}")
         if response.status_code == 200:
             print("status_code: 200")
             self.home(response.text)
@@ -65,7 +65,7 @@ class Login(object):
         doc = pq(html)
         # 提取用户名
         user_name = doc("summary > span").text().strip()
-        print(f"用户名：{user_name}")
+        print("用户名：{user_name}")
 
         # 提取仓库列表        
         Repositories = doc("div.Box-body > ul > li").text().split()
@@ -78,10 +78,10 @@ class Login(object):
         user_profile_bio = doc("#user_profile_bio").text()
         user_profile_company = doc("#user_profile_company").attr("value")
         user_profile_location = doc("#user_profile_location").attr("value")
-        print(f"页面标题：{page_title}")
-        print(f"用户资料描述：{user_profile_bio}")
-        print(f"用户资料公司：{user_profile_company}")
-        print(f"用户资料地点：{user_profile_location}")
+        print("页面标题：{page_title}")
+        print("用户资料描述：{user_profile_bio}")
+        print("用户资料公司：{user_profile_company}")
+        print("用户资料地点：{user_profile_location}")
 
     def main(self):
         email = input("email or username: ")
